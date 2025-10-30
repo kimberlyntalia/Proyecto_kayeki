@@ -14,11 +14,53 @@
   background-color:#FFB9BC ;
 
  }
- .btn-ks{
- }
- .btn-ks:hover{
+button.btn.btn-ks:hover {
   background-color: #CCAF51;
- }
+  color: white;
+  border-color: #CCAF51;
+}
+
+/* ==== SECCIONES MISION Y VISION ==== */
+#mision, #vision {
+  max-width: 900px;           /* ancho de texto centrado */
+  margin: 60px auto;          /* centra el bloque y da espacio arriba/abajo */
+  background-color: #fff6f6;  /* un rosado muy claro para mantener estética */
+  padding: 40px 50px;
+  border-radius: 12px;        /* esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+  line-height: 1.8;
+}
+
+/* ==== TITULOS ==== */
+#mision h2, #vision h2 {
+  font-size: 2em;
+  color: #CCAF51;             /* dorado elegante */
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ==== PÁRRAFOS ==== */
+#mision p, #vision p {
+  font-size: 18px;
+  color: #333;
+  text-align: justify;
+}
+
+/* ==== ANIMACIÓN AL PASAR EL CURSOR ==== */
+#mision:hover, #vision:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+
+/* Estilo inicial del botón (puedes ajustarlo) */
+
+/* Hover que sobrescribe Bootstrap */
+ 
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
