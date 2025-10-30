@@ -52,6 +52,11 @@ Route::middleware('guest')->group(function(){
     })->name('login');
     Route::post('login', [AuthController::class, 'login'])->name('login.post');
 
+ Route::get('acerca', function(){
+        return view('web.pages.acerca');
+    })->name('acerca');
+
+
     Route::get('/registro', [RegisterController::class, 'showRegistroForm'])->name('registro');
     Route::post('/registro', [RegisterController::class, 'registrar'])->name('registro.store');
 

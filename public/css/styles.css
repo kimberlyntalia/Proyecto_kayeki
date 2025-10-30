@@ -10,6 +10,15 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .bg-ks{
+  background-color:#FFB9BC ;
+
+ }
+ .btn-ks{
+ }
+ .btn-ks:hover{
+  background-color: #CCAF51;
+ }
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

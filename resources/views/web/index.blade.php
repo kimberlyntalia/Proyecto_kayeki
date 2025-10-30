@@ -9,7 +9,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" id="searchInput" placeholder="Buscar productos..."
                         aria-label="Buscar productos" name="search" value="{{request('search')}}">
-                    <button class="btn btn-outline-dark" type="submit" id="searchButton">
+                    <button class="btn-ks" type="submit" id="searchButton">
                         <i class="bi bi-search"></i> Buscar
                     </button>
                 </div>
