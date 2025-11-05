@@ -55,9 +55,21 @@ button.btn.btn-ks:hover {
   transition: all 0.3s ease;
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
-
-
 /* Estilo inicial del botón (puedes ajustarlo) */
+/* Estilo base del botón */
+.btn-ver-producto {
+  color: #212529; /* Color de texto inicial (negro Bootstrap) */
+  border: 1px solid #212529; /* Borde oscuro */
+  background-color: transparent; /* Fondo transparente */
+  transition: all 0.3s ease; /* Suaviza el cambio */
+}
+
+/* Estilo al pasar el cursor */
+.btn-ver-producto:hover {
+  color: #ffffff !important; /* Texto blanco */
+  background-color: #CCAF51 !important; /* Fondo dorado */
+  border-color: #CCAF51 !important; /* Borde dorado */
+}
 
 /* Hover que sobrescribe Bootstrap */
  
