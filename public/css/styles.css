@@ -71,6 +71,10 @@ button.btn.btn-ks:hover {
   border-color: #CCAF51 !important; /* Borde dorado */
 }
 
+select option {
+background-color: #CCAF51;
+}
+
 /* Hover que sobrescribe Bootstrap */
  
 :root {
@@ -2872,7 +2876,42 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
+  background-color: #CCAF51;
 }
+
+.btn-outline-dark {
+  color: #212529;
+  border-color: #212529;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark i,
+.btn-outline-dark span {
+  transition: all 0.3s ease;
+}
+
+/* Hover general */
+.btn-outline-dark:hover {
+  background-color: #CCAF51; /* fondo oscuro */
+  color: #fff; /* texto blanco */
+  border-color: #CCAF51;
+}
+
+/* Ícono y texto se vuelven blancos */
+.btn-outline-dark:hover i,
+.btn-outline-dark:hover span,
+.btn-outline-dark:hover .badge {
+  color: #fff !important;
+}
+
+/* Badge (contador) se invierte a blanco con texto oscuro */
+.btn-outline-dark:hover .badge {
+  background-color: #fff !important;
+  color: #CCAF51 !important;
+}
+
+
+
 .btn-check + .btn:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
