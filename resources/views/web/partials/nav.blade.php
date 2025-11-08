@@ -9,6 +9,7 @@
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{route('acerca')}}">Acerca </a></li>
                 <li class="nav-item"><a class="nav-link" href="{{route('web.index')}}">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('contactanos')}}">Contactanos</a></li>
                 
                 <li class="nav-item dropdown">
                     @auth

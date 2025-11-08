@@ -37,6 +37,11 @@ Route::middleware(['auth'])->group(function(){
         return view('dashboard');
     })->name('dashboard');
 
+         Route::get('contactanos', function(){
+        return view('web.pages.contactanos');
+    })->name('contactanos');
+
+
     Route::post('logout', function(){
         Auth::logout();
         return redirect('/login');
@@ -57,6 +62,11 @@ Route::middleware('guest')->group(function(){
     })->name('acerca');
 
 
+     Route::get('contactanos', function(){
+        return view('web.pages.contactanos');
+    })->name('contactanos');
+
+
     Route::get('/registro', [RegisterController::class, 'showRegistroForm'])->name('registro');
     Route::post('/registro', [RegisterController::class, 'registrar'])->name('registro.store');
 
@@ -66,4 +76,3 @@ Route::middleware('guest')->group(function(){
     Route::post('password/reset', [ResetPasswordController::class, 'resetPassword'])->name('password.update');
 
 });
-

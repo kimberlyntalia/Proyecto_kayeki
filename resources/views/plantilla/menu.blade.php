@@ -1,14 +1,14 @@
-<aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+<aside class="app-sidebar bg-menu shadow " style="background-color: #ffb9bc">
     <!--begin::Sidebar Brand-->
     <div class="sidebar-brand">
         <!--begin::Brand Link-->
         <a href="../index.html" class="brand-link">
             <!--begin::Brand Image-->
-            <img src="{{asset('assets/img/AdminLTELogo.png')}}" alt="AdminLTE Logo"
-                class="brand-image opacity-75 shadow" />
+            <img src="{{asset('assets/img/logoo.png')}}" style="max-height:60px;" alt="AdminLTE Logo"
+                class="brand-image" />
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">Sistema</span>
+            <span class="brand-text fw-light">Kajeki</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->

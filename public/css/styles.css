@@ -2945,6 +2945,7 @@ textarea.form-control-lg {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0d6efd;
@@ -10925,4 +10926,69 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+
+
+/* Inicio de Estilos del select dr organiar por mayor y menos*/
+.custom-select {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.select-selected {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  width: 220px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s;
+}
+
+.select-selected:hover {
+  border-color: #CCAF51;
+}
+
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+  display: none;
+}
+
+.select-items div {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover personalizado */
+.select-items div:hover {
+  background-color: #CCAF51;
+  color: white;
+}
+
+.select-arrow {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+/* Fin Estilos del select dr organiar por mayor y menos*/
+
+/* fondo menu */
+.bg-menu{
+  background-color: #FFB9BC;
+  
 }

@@ -15,15 +15,17 @@
                 </div>
             </div>
             <div class="col-md-4 mb-3">
-                <div class="input-group">
-                    <label class="input-group-text" for="sortSelect">Ordenar por:</label>
-                    <select class="form-select" id="sortSelect" name="sort">
-                        <option value="priceAsc" {{ request('sort') == 'priceAsc' ? 'selected' : '' }}>Precio: menor a
-                            mayor</option>
-                        <option value="priceDesc" {{ request('sort') == 'priceDesc' ? 'selected' : '' }}>Precio: mayor a
-                            menor</option>
-                    </select>
-                </div>
+               
+<div class="input-group">
+  <label class="input-group-text" for="sortSelect">Ordenar por:</label>
+  <div class="custom-select" id="customSort">
+    <div class="select-selected">Precio: mayor a menor <span class="select-arrow">▼</span></div>
+    <div class="select-items">
+      <div data-value="priceAsc">Precio: menor a mayor</div>
+      <div data-value="priceDesc">Precio: mayor a menor</div>
+    </div>
+  </div>
+</div>
             </div>
         </div>
     </div>

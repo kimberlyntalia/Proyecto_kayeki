@@ -6,15 +6,15 @@
     <title>Sistema</title>
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Sistema | ArtCode.com" />
-    <meta name="author" content="ArtCode" />
+    <meta name="title" content="Sistema | Kajeki.com" />
+    <meta name="author" content="kimberlyCode" />
     <meta
       name="description"
       content="Sistema."
     />
     <meta
       name="keywords"
-      content="Sistema, ArtCode"
+      content="Sistema, KimberlyCode"
     />
     <!--end::Primary Meta Tags-->
     <!--begin::Fonts-->
