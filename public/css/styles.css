@@ -10992,3 +10992,292 @@ textarea.form-control-lg {
   background-color: #FFB9BC;
   
 }
+
+/* Estilos del encabezado */
+.encabezado-animado {
+  background-color: #ffb9bc;
+  text-align: center;
+  padding: 100px 20px;
+  animation: fondoSuave 6s infinite alternate ease-in-out;
+}
+
+/* Animación del fondo (cambia ligeramente de tono) */
+@keyframes fondoSuave {
+  0% {
+    background-color: #ffb9bc;
+  }
+  100% {
+    background-color: #ffc4c8;
+  }
+}
+
+/* Texto principal con efecto de brillo */
+.titulo-brillante {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ffb6c1, 0 0 40px #ffb6c1;
+  animation: brillo 2.5s infinite ease-in-out;
+}
+
+/* Subtítulo con entrada suave */
+.subtitulo {
+  color: #fff;
+  font-size: 22px;
+  opacity: 0;
+  animation: aparecer 3s forwards 1s;
+}
+
+/* Animación del brillo */
+@keyframes brillo {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ffb6c1, 0 0 20px #ffb6c1;
+    opacity: 1;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff8fab, 0 0 60px #ffb6c1;
+    opacity: 0.8;
+  }
+}
+
+/* Animación del subtítulo */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.frase {
+  text-align: center;
+  background: linear-gradient(90deg, #ffb9bc, #c7a3d3, #ccaf51);
+  background-size: 300% 300%;
+  color: #fff;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  padding: 50px 20px;
+  border-radius: 12px;
+  animation: degradadoMovimiento 8s ease infinite;
+  box-shadow: 0 0 20px rgba(255, 185, 188, 0.6);
+}
+
+/* Animación del degradado */
+@keyframes degradadoMovimiento {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.encabezado-animado {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 120px 20px;
+  color: #fff;
+  border-radius: 0 0 60px 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(120deg, #ffb9bc, #c7a3d3, #ccaf51, #ffb9bc);
+  background-size: 400% 400%;
+  animation: fondoDinamico 10s ease infinite;
+}
+
+@keyframes fondoDinamico {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Logo */
+.encabezado-animado .logo {
+  width: 140px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  animation: brilloLogo 6s ease-in-out infinite alternate;
+  margin-bottom: 20px;
+}
+
+@keyframes brilloLogo {
+  from { transform: scale(1); filter: brightness(1); }
+  to { transform: scale(1.05); filter: brightness(1.2); }
+}
+
+/* Brillos */
+.brillos::before,
+.brillos::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 60%);
+  animation: brillos 8s linear infinite;
+  mix-blend-mode: overlay;
+}
+
+.brillos::after {
+  animation-delay: 4s;
+}
+
+@keyframes brillos {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(25%, 25%) rotate(360deg); }
+}
+
+/* Texto */
+.encabezado-animado h1 {
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+.encabezado-animado p {
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 10px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+/* Fondo animado */
+.encabezado-animado {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 140px 20px;
+  color: #fff;
+  border-radius: 0 0 60px 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(120deg, #ffb9bc, #c7a3d3, #ccaf51, #ffb9bc);
+  background-size: 400% 400%;
+  animation: fondoDinamico 10s ease infinite;
+}
+
+@keyframes fondoDinamico {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Logo */
+.encabezado-animado .logo {
+  width: 140px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  animation: brilloLogo 6s ease-in-out infinite alternate;
+  margin-bottom: 20px;
+}
+
+@keyframes brilloLogo {
+  from { transform: scale(1); filter: brightness(1); }
+  to { transform: scale(1.05); filter: brightness(1.2); }
+}
+
+/* Texto */
+.encabezado-animado h1 {
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+.encabezado-animado p {
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 10px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+/* Imágenes dentro del encabezado */
+.decoraciones img {
+  position: absolute;
+  width: 120px;
+  border-radius: 20px;
+  opacity: 0.9;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Posiciones personalizadas */
+.img1 { top: 20%; left: 10%; transform: rotate(-10deg); }
+.img2 { top: 50%; left: 5%; transform: rotate(5deg); }
+.img3 { top: 25%; right: 10%; transform: rotate(10deg); }
+.img4 { top: 60%; right: 5%; transform: rotate(-5deg); }
+
+/* Efecto al pasar el cursor */
+.decoraciones img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.encabezado-animado {
+  position: relative;
+  background: linear-gradient(120deg, #ffb9bc, #c7a3d3, #ccaf51, #ffb9bc);
+  background-size: 400% 400%;
+  animation: fondoDinamico 10s ease infinite;
+  height: 400px;
+  border-radius: 0 0 60px 60px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+@keyframes fondoDinamico {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🔹 Imagen bajada un poco más */
+.imagen-izquierda {
+  position: absolute;
+  top: 100px;   /* antes era 20px → la bajamos */
+  left: 40px;
+}
+
+.imagen-izquierda img {
+  width: 350px;
+  height: auto;
+
+}
+
+@keyframes flotar {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* Imagen derecha */
+.imagen-derecha {
+  position: absolute;
+  top: 100px;   /* misma altura que la izquierda */
+  right: 40px; /* la coloca al lado derecho */
+}
+
+.imagen-derecha img {
+  width: 300px;
+  height: auto;
+}
+
+/* Animaciones suaves */
+@keyframes flotar {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+@keyframes flotarDerecha {
+  from { transform: translateY(-10px); }
+  to { transform: translateY(0); }
+}
