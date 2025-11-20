@@ -11249,7 +11249,7 @@ textarea.form-control-lg {
 }
 
 .imagen-izquierda img {
-  width: 350px;
+  width: 300px;
   height: auto;
 
 }
@@ -11277,7 +11277,157 @@ textarea.form-control-lg {
   to { transform: translateY(-10px); }
 }
 
+
+
 @keyframes flotarDerecha {
   from { transform: translateY(-10px); }
   to { transform: translateY(0); }
 }
+
+
+/* --- General del footer --- */
+.footer {
+    background: ccaf51;
+    padding: 50px 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+/* Contenedor principal */
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Logo */
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+/* Iconos de redes */
+.social-icons img {
+    width: 36px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Industria y comercio */
+.footer-cert {
+    width: 140px;
+    margin-top: 20px;
+}
+
+/* Títulos */
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* Listas */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #444;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ccaf51; /* rosado elegante */
+}
+
+/* Textos */
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Línea final */
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 80px) {
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* Alineado a la izquierda */
+    gap: 15px;                 /* Espacio entre logo, redes y sello */
+}
+
+.logo-footer {
+    width: 190px;              /* Tamaño del logo (ajústalo si quieres) */
+}
+
+.social-icons img {
+    width: 10px;               /* Tamaño de los iconos */
+    margin-right: 2px;        /* Espacio entre iconos */
+}
+
+.icon-industria {
+    width: 190px;              /* Tamaño del sello de industria */
+    margin-top: 2px;
+}
+
+/* Contenedor de los iconos */
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;   /* MÁS PEGADOS */
+    margin-top: 10px;
+}
+
+/* Tamaño de iconos */
+.social-icons img {
+    width: 70px;       /* MÁS GRANDES */
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform .2s ease-in-out;
+}
+
+/* hover opcional */
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+

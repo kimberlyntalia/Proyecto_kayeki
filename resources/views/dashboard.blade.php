@@ -20,8 +20,7 @@
                         @endif
                     </div>
                     <!-- /.card-body -->
-                    <div class="card-footer clearfix">
-                    </div>
+              
                 </div>
                 <!-- /.card -->
             </div>

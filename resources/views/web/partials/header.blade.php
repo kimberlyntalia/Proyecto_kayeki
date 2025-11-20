@@ -10,14 +10,15 @@
 </header>
 
   <div class="imagen-izquierda">
-      <img src="{{asset('assets/img/mujer2.png')}}" alt="Mujer maquillándose">
+      <img src="{{asset('assets/img/mujer21.png')}}" alt="Mujer maquillándose">
     </div>
   </div>
-</section>
 
 <div class="imagen-derecha">
       <img src="{{asset('assets/img/mujer.png')}}" alt="Mujer maquillándose">
     </div>
   </div>
 </section>
+
+
 
