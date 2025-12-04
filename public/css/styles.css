@@ -11108,33 +11108,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
 }
 
-@keyframes brilloLogo {
-  from { transform: scale(1); filter: brightness(1); }
-  to { transform: scale(1.05); filter: brightness(1.2); }
-}
 
-/* Brillos */
-.brillos::before,
-.brillos::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 60%);
-  animation: brillos 8s linear infinite;
-  mix-blend-mode: overlay;
-}
-
-.brillos::after {
-  animation-delay: 4s;
-}
-
-@keyframes brillos {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  100% { transform: translate(25%, 25%) rotate(360deg); }
-}
 
 /* Texto */
 .encabezado-animado h1 {
@@ -11158,7 +11132,7 @@ textarea.form-control-lg {
   text-align: center;
   padding: 140px 20px;
   color: #fff;
-  border-radius: 0 0 60px 60px;
+  border-radius: 40px 40px 40px 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   background: linear-gradient(120deg, #ffb9bc, #c7a3d3, #ccaf51, #ffb9bc);
   background-size: 400% 400%;
@@ -11173,12 +11147,13 @@ textarea.form-control-lg {
 
 /* Logo */
 .encabezado-animado .logo {
-  width: 140px;
+  width: 180px;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
   animation: brilloLogo 6s ease-in-out infinite alternate;
   margin-bottom: 20px;
+  margin-top: -40px;
 }
 
 @keyframes brilloLogo {
@@ -11192,6 +11167,7 @@ textarea.form-control-lg {
   font-weight: bold;
   letter-spacing: 3px;
   text-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+  margin-top: -10px;
 }
 
 .encabezado-animado p {
@@ -11230,7 +11206,7 @@ textarea.form-control-lg {
   background-size: 400% 400%;
   animation: fondoDinamico 10s ease infinite;
   height: 400px;
-  border-radius: 0 0 60px 60px;
+  border-radius: 40px 40px 40px 40px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   overflow: hidden;
 }
@@ -11249,8 +11225,10 @@ textarea.form-control-lg {
 }
 
 .imagen-izquierda img {
-  width: 300px;
+  width: 500px;
   height: auto;
+  margin-top: -50px; 
+  margin-left: -80px;
 
 }
 
@@ -11263,12 +11241,14 @@ textarea.form-control-lg {
 .imagen-derecha {
   position: absolute;
   top: 100px;   /* misma altura que la izquierda */
-  right: 40px; /* la coloca al lado derecho */
+  right: -25px; /* la coloca al lado derecho */
 }
 
 .imagen-derecha img {
-  width: 300px;
+  width: 500px;
   height: auto;
+  margin-top: -50px; 
+  margin-left: -80px;
 }
 
 /* Animaciones suaves */
@@ -11285,56 +11265,74 @@ textarea.form-control-lg {
 }
 
 
-/* --- General del footer --- */
+/* --------- FOOTER GENERAL --------- */
 .footer {
-    background: ccaf51;
-    padding: 50px 40px 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    border-top: 1px solid #ddd;
+    background: #FFB9BC;
+    padding: 50px 0 20px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid #e5e5e5;
 }
 
-/* Contenedor principal */
-.footer-top {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    max-width: 1300px;
+.footer-wrapper {
+    max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+    align-items: flex-start;
+    gap: 25px;
 }
 
-/* Logo */
-.footer-logo {
-    width: 150px;
-    margin-bottom: 15px;
+/* --------- LOGO COMO TRENDY --------- */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* LOGO A LA IZQUIERDA */
+    gap: 18px;
 }
 
-/* Iconos de redes */
+.logo-footer {
+    width: 400px;       /* Tamaño ideal tipo Trendy */
+    height: auto;
+    margin-left: -180px;
+    margin-top: -50px; 
+}
+
+/* --------- ICONOS COMO TRENDY --------- */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-left: -100px;
+    margin-top: -50px; 
+
+}
+
 .social-icons img {
-    width: 36px;
-    margin-right: 10px;
-    transition: 0.3s;
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
-/* Industria y comercio */
-.footer-cert {
-    width: 140px;
-    margin-top: 20px;
+/* --------- SEPARADORES --------- */
+.footer-divider {
+    width: 1px;
+    height: 180px;
+    background: #e5e5e5;
+    margin: auto;
 }
 
-/* Títulos */
+/* --------- COLUMNAS DE TEXTO --------- */
 .footer-col h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #111;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #212121;
 }
 
-/* Listas */
 .footer-col ul {
     list-style: none;
     padding: 0;
@@ -11347,87 +11345,95 @@ textarea.form-control-lg {
 
 .footer-col ul li a {
     text-decoration: none;
-    font-size: 15px;
-    color: #444;
+    color: #666;
+    font-size: 14px;
     transition: 0.3s;
 }
 
 .footer-col ul li a:hover {
-    color: #ccaf51; /* rosado elegante */
+    color: #CCAF51; /* color moderno, estilo Trendy */
 }
 
-/* Textos */
 .footer-col p {
     font-size: 14px;
+    color: #555;
     margin-bottom: 12px;
-    line-height: 1.5;
 }
 
-/* Línea final */
+/* --------- FOOTER BOTTOM --------- */
 .footer-bottom {
     text-align: center;
     padding-top: 25px;
-    margin-top: 30px;
-    border-top: 1px solid #ddd;
     font-size: 14px;
-    color: #555;
+    color: #777;
 }
 
-/* Responsive */
-@media (max-width: 80px) {
-    .footer-top {
-        grid-template-columns: repeat(2, 1fr);
+/* --------- RESPONSIVE --------- */
+@media (max-width: 900px) {
+    .footer-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-divider {
+        display: none;
     }
 }
 
 @media (max-width: 600px) {
-    .footer-top {
+    .footer-wrapper {
         grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .footer-brand {
+        align-items: flex-start;
     }
 }
 
-
-.footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;   /* Alineado a la izquierda */
-    gap: 15px;                 /* Espacio entre logo, redes y sello */
+/* Hover color menú */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ccaf51 !important;
 }
 
-.logo-footer {
-    width: 190px;              /* Tamaño del logo (ajústalo si quieres) */
+/* Hover del nombre de la marca */
+.navbar-brand:hover {
+    color: #ccaf51 !important;
 }
 
-.social-icons img {
-    width: 10px;               /* Tamaño de los iconos */
-    margin-right: 2px;        /* Espacio entre iconos */
+/* Hover del dropdown */
+.dropdown-menu .dropdown-item:hover {
+    color: #ccaf51 !important;
 }
 
-.icon-industria {
-    width: 190px;              /* Tamaño del sello de industria */
-    margin-top: 2px;
+/* Hover del botón del carrito */
+.btn-outline-dark:hover {
+    background-color: #ccaf51 !important;
+    border-color: #ccaf51 !important;
+    color: #fff !important;
 }
 
-/* Contenedor de los iconos */
-.social-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;   /* MÁS PEGADOS */
-    margin-top: 10px;
+input:focus, textarea:focus {
+    outline: none !important;
+    border-color: #ccaf51 !important;
+    box-shadow: 0 0 5px #ccaf51 !important;
 }
 
-/* Tamaño de iconos */
-.social-icons img {
-    width: 70px;       /* MÁS GRANDES */
-    height: 70px;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: transform .2s ease-in-out;
+.btn-primary {
+    background-color: #ffffff !important;
+    border-color: #ccaf51 !important;
+    color: #000 !important; /* Texto negro para que se lea */
 }
 
-/* hover opcional */
-.social-icons img:hover {
-    transform: scale(1.1);
+/* Hover opcional */
+.btn-primary:hover {
+    background-color: #ccaf51 !important;
+    border-color: #ccaf51 !important;
+    color: #fff !important;
+}
+
+.ubicacion{
+    color: #c7a3d3 !important;
 }
 
