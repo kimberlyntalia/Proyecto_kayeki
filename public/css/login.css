@@ -1,0 +1,53 @@
+public/assets/css/login.css
+/* ---- SOLO LOGIN ---- */
+
+/* CENTRADO TOTAL DE LA TARJETA */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;      /* 🔴 CENTRA VERTICAL */
+    justify-content: center;  /* 🔴 CENTRA HORIZONTAL */
+    background: linear-gradient(135deg, #ffb9bc, #c7a3d3);
+}
+
+/* Caja del login */
+.login-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Tarjeta */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* Inputs */
+.form-control {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Botón */
+.btn-primary {
+    width: 100%;
+    height: 45px;
+    background: #ccaf51;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}

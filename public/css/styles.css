@@ -11437,3 +11437,76 @@ input:focus, textarea:focus {
     color: #c7a3d3 !important;
 }
 
+/* =========================
+   TARJETA PERFIL / DROPDOWN
+========================= */
+
+.dropdown-menu {
+    border: none !important;
+    border-radius: 18px !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+    padding: 0 !important;
+    overflow: hidden;
+    min-width: 260px;
+}
+
+/* HEADER AZUL */
+.dropdown-menu .dropdown-header,
+.dropdown-menu .bg-primary {
+    background: linear-gradient(135deg, #c77dff, #9d4edd) !important;
+    color: white !important;
+    text-align: center;
+    padding: 20px !important;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* OPCIONES */
+.dropdown-menu .dropdown-item {
+    padding: 14px 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+/* HOVER */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f3e8ff !important;
+    color: #5a189a !important;
+}
+
+/* ICONOS */
+.dropdown-menu .dropdown-item i {
+    font-size: 18px;
+    color: #9d4edd;
+}
+
+/* BOTÓN CERRAR SESIÓN */
+.dropdown-menu .dropdown-item.text-danger {
+    color: #dc3545 !important;
+}
+
+.dropdown-menu .dropdown-item.text-danger:hover {
+    background-color: #fdecea !important;
+}
+
+/* ====== DROPDOWN MIS PEDIDOS / MI PERFIL ====== */
+
+/* Ventana del dropdown sin bordes redondeados */
+.dropdown-menu {
+    border-radius: 0 !important;
+}
+
+/* Items del dropdown sin bordes redondeados */
+.dropdown-menu .dropdown-item {
+    border-radius: 0 !important;
+}
+
+/* Hover y focus: fondo #ccaf51 y texto blanco */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #ccaf51 !important;
+    color: #ffffff !important;
+}
